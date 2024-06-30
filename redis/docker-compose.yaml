@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  fast-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: redis-fast-api
+    container_name: redis-fast-api
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+      
+  redis:
+    image: 'redislabs/redismod'
+    ports:
+      - '6379:6379'

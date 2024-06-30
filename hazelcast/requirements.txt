@@ -1,0 +1,3 @@
+fastapi
+ruff
+hazelcast-python-client

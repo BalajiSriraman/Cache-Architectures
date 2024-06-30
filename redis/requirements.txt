@@ -1,0 +1,4 @@
+fastapi
+ruff
+redis
+redis[hiredis]
