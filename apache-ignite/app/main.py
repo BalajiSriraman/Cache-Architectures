@@ -32,3 +32,4 @@ async def read_item(key: str):
         raise HTTPException(status_code=404, detail="Item not found")
     
     return json.loads(value)
+    
