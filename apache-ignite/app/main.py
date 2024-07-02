@@ -5,6 +5,7 @@ import json
 
 app = FastAPI()
 
+
 # Initialize Ignite client
 ignite_client = Client()
 ignite_client.connect('localhost', 10800)  
